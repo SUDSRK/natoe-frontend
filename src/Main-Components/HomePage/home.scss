@@ -1,0 +1,55 @@
+// src/styles/MainPage.scss
+
+.main-page {
+  display: flex;
+  background-color: lightgray ; // Set background color of main page
+}
+.carousel-section{
+  display: flex;
+  background-color: white;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray; // Set background color of main content section
+}
+.navbar {
+  width: 200px; // Fixed width for the navbar
+  background-color: black; // Background color of the navbar
+}
+
+.navbar .logo-section {
+  height: 50px; // Height of the logo section
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.navbar .logo-section img {
+  width: 30px; // Adjust size as needed
+  height: 30px; // Adjust size as needed
+}
+
+
+.carousel-container {
+  width: 600px; // Fixed width for the carousel
+  height: 100%; // Fixed height for the carousel
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.carousel-container img {
+  max-width: 100%; // Ensure images don't exceed the container width
+  max-height: 100%; // Ensure images don't exceed the container height
+}
+
+.post-button {
+  margin-top: 20px;
+}

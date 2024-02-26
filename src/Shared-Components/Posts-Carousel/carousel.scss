@@ -1,0 +1,32 @@
+.carousel-container {
+  position: relative;
+  width: 400px; // Fixed width for the carousel
+  height: 300px; // Fixed height for the carousel
+  overflow: hidden; // Hide overflow to prevent images from overflowing
+}
+
+.slide-image {
+  width: 100%; // Ensure image fills the container
+  height: 100%; // Ensure image fills the container
+  object-fit: cover; // Maintain aspect ratio and cover the container
+}
+
+.previous-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.previous-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}

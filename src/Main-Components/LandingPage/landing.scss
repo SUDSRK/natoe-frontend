@@ -1,0 +1,103 @@
+@keyframes slideInH1 {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInP {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.App {
+  background: radial-gradient(circle, rgba(70,53,106,1) 0%, rgba(70,53,106,1) 57%, rgba(47,36,93,1) 100%, rgba(238,174,202,1) 100%);
+  color: #fff; /* White text color */
+  padding: 20px;
+  height: 100%; /* Set height to cover the entire viewport */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+
+  &__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    &_img {
+      height: 3rem;
+    }
+  }
+
+  &__first-section {
+    display: flex;
+    align-items: center;
+    height: 100%; /* Ensure first-section takes up full height */
+
+    &__content {
+      display: flex;
+      justify-content: space-between; /* Equal space between children */
+      align-items: center;
+      flex: 1;
+    }
+
+    &__text {
+      text-align: center;
+      width: 50%; /* Take up 50% of the available space */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center vertically */
+      //padding: 0 200px; /* Adjust padding as needed */
+
+      .slide-in-h1 {
+        animation: slideInH1 2.5s ease forwards;
+        font-size: 4.5em; /* Adjust the font size as needed */
+      }
+
+      .slide-in-p {
+        animation: slideInP 2.5s ease forwards;
+        font-size: 1.5em;
+      }
+      &_button {
+        .route-button{
+          padding: 1em;
+          font-size: medium;
+          border: 1px transparent;
+          border-radius: 1em;
+        }
+      }
+    }
+
+    &__image {
+      width: 50%; /* Take up 50% of the available space */
+      text-align: center;
+      overflow: hidden; /* Ensure image stays within its section */
+
+      img {
+        max-width: 100%;
+        height: 95vh;
+      }
+    }
+  }
+  .selection-button{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    min-width: 12rem;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    border: 1px solid rgb( 212, 212, 212 );
+    background: white;
+  }
+  /* Add styles for other sections here */
+}
